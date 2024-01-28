@@ -16,7 +16,6 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 0.8rem;
-
   background-color: #fffcf7;
 }
 nav {
@@ -48,6 +47,10 @@ nav {
   margin-inline-start: 15px;
   margin-inline-end: 15px;
 }
+.item-container > ul > li > a {
+  color: #02073e;
+  font-weight: 500;
+}
 .btn-container {
   width: 25%;
   display: flex;
@@ -66,6 +69,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #02073e;
+  font-weight: 600;
 }
 
 .btn-container button:nth-child(1) a div {
@@ -75,9 +80,12 @@ nav {
   width: 100px;
   padding: 10px;
   background-color: #fff0d7;
-  color: #e5a740;
   border-radius: 5px;
   border: none;
+}
+.btn-container button:nth-child(2) a {
+  color: #e5a740;
+  font-weight: 600;
 }
 
 /* main css  */
@@ -202,6 +210,7 @@ h3 {
 /* features css  */
 .features-container {
   display: flex;
+  margin-block: 5rem;
 }
 .features-container p {
   color: #343d48;
@@ -271,11 +280,13 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 1.5rem;
 }
+
 .work-container-body > ul > li {
   display: flex;
   align-items: center;
   margin-top: 0.8rem;
 }
+.pack-info-body > ul > li img,
 .work-container-body > ul > li > img {
   margin-inline-end: 0.8rem;
 }
@@ -323,4 +334,201 @@ h3 {
 .slide-features-container div:nth-child(2) {
   display: flex;
   justify-content: space-between;
+}
+
+/* pricing plan */
+.pricing-plan-container {
+  background-color: #f9fafc;
+  padding-block-start: 3rem;
+  padding-block-end: 8rem;
+  width: 100%;
+}
+.pricing-plan-container-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.title h4 {
+  text-align: center;
+  font-size: 25px;
+  color: #0f2137;
+}
+div .title > p {
+  text-align: center;
+  font-size: 18px;
+  margin-block: 0.8rem;
+  color: #858b91;
+  font-weight: 400;
+}
+.pricing-plan-container-header > .tab {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  margin-block: 2rem;
+}
+.pricing-plan-container-header > .tab > span {
+  font-weight: 600;
+  color: #0f2137;
+  margin-inline: 0.8rem;
+}
+.container-button {
+  width: 62px;
+  border-radius: 50px;
+  height: 28px;
+  position: relative;
+  display: flex;
+  padding: 2px;
+  align-items: center;
+  background-color: #ffc059;
+}
+.container-button div {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.pack-info-container {
+  display: flex;
+  padding-inline-start: 12rem;
+  position: relative;
+}
+.pack-info-container > .pack-info:nth-child(2) {
+  box-shadow: -2px 1px 17px 11px #dddedf3f;
+  width: 510px;
+  padding: 3.5rem;
+  position: absolute;
+  top: 0;
+  right: 12rem;
+}
+.pack-info {
+  width: 480px;
+  padding: 3.2rem;
+  height: 600px;
+  background-color: #fff;
+}
+.pack-info-body > ul > li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #343d48;
+  line-height: 26px;
+  margin-block: 1.2rem;
+}
+.pack-info-body > ul > li > h4 {
+  font-weight: normal;
+}
+.pack-info hr {
+  height: 3px;
+  border: none;
+  background-color: #e0e2e4;
+}
+.pack-info-header > h4 {
+  font-size: 22px;
+  margin-bottom: 0.6rem;
+}
+.pack-info-header > h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffc059;
+}
+.pack-info-header > p {
+  font-size: 16px;
+  color: #343d48;
+  line-height: 26px;
+  font-weight: 600;
+  margin-block: 1.2rem;
+}
+.pack-info-body button {
+  border-radius: 0.3rem;
+  border: none;
+  width: 163px;
+  height: 45px;
+  background-color: #ffbf592c;
+  font-size: 16px;
+  margin-block-start: 1.3rem;
+}
+.pack-info-body button a {
+  color: #ffc059;
+  font-weight: bold;
+}
+.pack-info-container > .pack-info:nth-child(2) > .pack-info-body button {
+  background-color: #ffc059;
+}
+.pack-info-container > .pack-info:nth-child(2) > .pack-info-body button a {
+  color: white;
+}
+
+/* comments css  */
+.comments-container {
+  display: flex;
+  justify-content: center;
+  padding-block: 2rem;
+  background-color: #fffcf7;
+}
+.comments-container > div .title {
+  text-align: center;
+}
+/* footer css */
+
+footer {
+  background-color: #353448;
+  padding-block-start: 3rem;
+}
+footer > div > .title > h4 {
+  color: #fff;
+}
+footer > div > .title > p {
+  color: #fff;
+  font-size: 12px;
+  opacity: 60%;
+}
+footer > div > .form-container > form {
+  display: flex;
+  justify-content: center;
+  margin-block: 2.5rem;
+}
+footer > div > .form-container > form > input {
+  background-color: #ffffff27;
+  border-radius: 3px;
+  padding: 0.8rem;
+  color: white;
+}
+
+footer > div > .form-container > form > input::placeholder {
+  color: #fff;
+}
+
+footer > div > .form-container > form > button {
+  width: 160px;
+  background-color: #ffc059;
+  color: #020718;
+  border: none;
+  border-radius: 3px;
+  font-weight: 400;
+}
+footer div > nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  background-color: #2b293e;
+}
+
+footer .logo-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+footer .item-container {
+  display: flex;
+  justify-content: center;
+}
+footer .item-container > ul > li > a {
+  color: #fff;
+}
+footer .logo-container > span > p {
+  color: #fff;
+  font-size: 12px;
 }
