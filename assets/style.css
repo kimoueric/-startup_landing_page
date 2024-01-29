@@ -373,20 +373,22 @@ div .title > p {
   margin-inline: 0.8rem;
 }
 .container-button {
-  width: 62px;
-  border-radius: 50px;
-  height: 28px;
+  width: 3rem;
+  border-radius: 20px;
+  height: 2rem;
   position: relative;
   display: flex;
-  padding: 2px;
+  /* padding: 2px; */
   align-items: center;
   background-color: #ffc059;
 }
 .container-button div {
-  width: 25px;
-  height: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 100%;
   position: absolute;
+  left: 0.18rem;
+  box-shadow: 0px 4px 6px 0px #0000004d;
   background-color: #ffffff;
 }
 
@@ -471,6 +473,44 @@ div .title > p {
 .comments-container > div .title {
   text-align: center;
 }
+.comments-items-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 2px solid; */
+}
+.comment-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 350px;
+  /* border: 2px solid; */
+  margin: 0.5rem;
+}
+.comments-items-container div p {
+  font-size: 0.9rem;
+}
+.user-info {
+  margin-top: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+.user-info .left {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-inline-end: 0.5rem;
+}
+.user-info .left img {
+  border-radius: 100%;
+}
+.user-info .right h4 {
+  font-size: 0.9rem;
+}
+.user-info .right h5 {
+  color: rgb(67, 140, 250);
+  margin-top: 0.3rem;
+}
+
 /* footer css */
 
 footer {
