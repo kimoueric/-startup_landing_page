@@ -752,14 +752,24 @@ footer .logo-container > span > p {
   .focus {
     width: 50px;
   }
+  .pack-info {
+    width: 355px;
+    height: 100%;
+    border-radius: 10px;
+  }
+
   .pack-info-container {
-    position: sticky;
+    position: static;
     flex-direction: column;
+    align-items: center;
     padding-inline-start: 0rem;
   }
   .pack-info-container > .pack-info:nth-child(2) {
+    width: 350px;
+    align-items: center;
+    border-radius: 10px;
     margin-block-start: 1rem;
-    position: sticky;
+    position: static;
   }
   .title h4 {
     font-size: 20px;
@@ -799,7 +809,7 @@ footer .logo-container > span > p {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   features-container-header,
   header nav .btn-container {
     width: 100%;
